@@ -22,7 +22,7 @@ interface ComicPanelProps {
 
 async function getComicData(issue?: number) {
 	const url = typeof issue === 'undefined' ? 'https://xkcd.com/info.0.json' : `https://xkcd.com/${issue}/info.0.json`;
-	const res = await fetch(url);
+	const res = await fetch(url, { cache: 'no-store' });
 	return res.json() as Promise<ComicData>;
 }
 
