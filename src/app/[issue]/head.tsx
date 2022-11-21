@@ -1,7 +1,7 @@
 export default function Head() {
 	return (
 		<>
-			<title>The XKCD Times</title>
+			<title>Archives | The XKCD Times</title>
 		</>
 	);
 }
